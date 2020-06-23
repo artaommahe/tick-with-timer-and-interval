@@ -10,11 +10,11 @@ describe('tickWithTimerAndInterval', () => {
 
     expect(callback).not.toHaveBeenCalled();
 
-    tick(undefined, { processNewMacroTasksSynchronously: false });
+    tick();
 
     expect(callback).not.toHaveBeenCalled();
 
-    tick(undefined, { processNewMacroTasksSynchronously: false });
+    tick();
 
     expect(callback).toHaveBeenCalledTimes(1);
   }));
@@ -26,11 +26,11 @@ describe('tickWithTimerAndInterval', () => {
 
     expect(callback).not.toHaveBeenCalled();
 
-    tick(undefined, { processNewMacroTasksSynchronously: false });
+    tick();
 
     expect(callback).not.toHaveBeenCalled();
 
-    tick(undefined, { processNewMacroTasksSynchronously: false });
+    tick();
 
     expect(callback).toHaveBeenCalledTimes(1);
   }));
